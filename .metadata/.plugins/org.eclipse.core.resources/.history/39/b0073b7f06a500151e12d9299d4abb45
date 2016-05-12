@@ -1,0 +1,27 @@
+package test;
+import java.util.*;
+import java.math.*;
+import java.lang.reflect.*;
+import java.lang.Thread;
+
+
+
+class Test {
+	public static void main(String[] args) {
+		Random random = new Random(System.currentTimeMillis());
+		List<Student> list = new ArrayList<Student>();
+		for (int i = 0; i < 10; i++) {
+			Student s = new Student(random.nextInt(100), random.nextInt(200));
+			System.out.print(s.sat + "   ");
+			System.out.println(s.gpa);
+			list.add(s);
+		}
+	 }
+	
+		 
+
+}
+	 
+	 
+
+		
